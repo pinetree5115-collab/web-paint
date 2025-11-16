@@ -5,4 +5,4 @@ canvas.width = 800;
 canvas.height = 800;
 
 
-ctx.fillRect()
+ctx.fillRect(200. 200, 50, 200);
