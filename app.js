@@ -11,7 +11,7 @@ function onMove(event) {
     ctx.stroke();
     return;
   }
-  ctx.moverTo(event.offsetX, event.offsetY);
+  ctx.moveTo(event.offsetX, event.offsetY);
 }
 function onMouseDown() {
   isPainting = true;
