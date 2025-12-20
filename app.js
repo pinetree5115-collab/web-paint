@@ -39,9 +39,11 @@ function onColorChange(event) {
   ctx.fillStyle = event.target.value;
 }
 
-function onColorChange(event) {
-  ctx.strokeStyle = event.target.dataset.color;
-  ctx.fillStyle = event.target.dataset.color;
+function onColorClick(event) {
+  const colorValue = event.target.dataset.color;
+  ctx.strokeStyle = colorValue;
+  ctx.fillStyle = colorValue;
+  color.value = colorValue;
 }
 
 
@@ -53,5 +55,5 @@ canvas.addEventListener("mouseleave", cancelPainting)
 lineWidth.addEventListener("change", onLineWidthChange)
 color.addEventListener("change", onColorChange)
 
-colorOptions.forEach(color => color.addEventListener("click", onColorChange))
+colorOptions.forEach(color => color.addEventListener("click", onColorClick))
 
