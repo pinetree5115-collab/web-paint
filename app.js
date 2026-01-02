@@ -87,7 +87,11 @@ function onEraserClick() {
 function onFileChange(event) {
   const file = event.target.files[0];
   const url = URL.createObjectURL(file);
-  console.log(url);
+  const image = new Image();
+  image.src = url;
+  image.onload = function () {
+    ctx.drawImage(image, 200, 200)
+  }
 }
 
 canvas.addEventListener("mousemove", onMove);
