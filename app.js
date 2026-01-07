@@ -19,6 +19,7 @@ const CANVAS_HEIGHT = 800;
 canvas.width = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
 ctx.lineWidth = lineWidth.value;
+ctx.lineCap = "round"; // 선 끝을 둥글게 처리.
 let isPainting = false;
 let isFilling = false;
 
