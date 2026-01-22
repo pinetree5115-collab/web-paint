@@ -54,7 +54,8 @@ input#color {
   background-color: white;
 }
 
-button {
+button,
+label {
   all: unset;
   padding: 10px 0px;
   text-align: center;
@@ -69,6 +70,11 @@ button {
 button:hover {
   opacity: 0.85;
 }
+
+input#file {
+  display: none;
+}
+
 
 input#text {
   all: unset;
